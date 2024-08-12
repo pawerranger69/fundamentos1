@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //Declarar Variables
+    float Area,Base,Altura;
+    //Entrada
+    cout <<"Ingresar Base: ";
+    cin >> Base;
+    cout << "Ingresar Altura: ";
+    cin >> Altura;
+    //Proceso
+    Area=Base*Altura/2;
+    cout <<"El Area del triangulo es: "  << Area;
+
+    return 0;
+}
