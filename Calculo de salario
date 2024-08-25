@@ -1,0 +1,22 @@
+#include <math.h>//Uso de librerias
+#include <iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    float h,p,pa,pa1;//Declaracion de variables
+    string n;
+    cout<<"Hola, ingresa tu nombre porfavor: ";//Peticion de datos
+    cin>>n;
+    cout<<n<<" ingresa la cantidad de horas trabajadas: ";
+    cin>>h;
+    cout<<n<<" ingresa el pago en Bs. que recibes por hora: ";
+    cin>>p;
+    pa=p*h;
+    pa1=pa-(0.13)*pa;
+    if(pa>8272)
+        cout<<n<<" tu salario neto es: "<<pa1<<" Bs.";//Salida de datos
+    else
+        cout<<n<<" tu salario neto es: "<<pa<<" Bs.";//Salida de datos
+    return 0;
+}
