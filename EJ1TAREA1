@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cout<<"Hola ingresa el valor de A: ";
+    cin>>a;
+    cout<<"Ahora ingresa el valor de B: ";
+    cin>>b;
+    c=a;
+    a=b;
+    b=c;
+    cout<<"El valor de A es: "<<a<<endl;
+    cout<<"El valor de B es: "<<b<<endl;
+    return 0;
+}
