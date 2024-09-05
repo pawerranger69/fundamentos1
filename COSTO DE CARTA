@@ -1,0 +1,34 @@
+#include <iostream>
+#include <math.h>
+using namespace std ;
+
+int main() {
+    float peso, costo ;
+    cout<< "Introduzca el costo de la carta: ";
+    cin>> peso;
+    //asignacion de costo
+    if (peso>0 && peso<=50){
+        costo= 1.5;
+    } else if (peso>50 && peso<=100){
+        costo= 4 ;
+    } else if (peso>100 && peso<=200){
+        costo= 6 ;
+    } else if (peso>200 && peso<=350){
+        costo= 10.5 ;
+    } else if (peso>350 && peso<=500){
+        costo= 15  ;
+    } else { 
+        costo=-1;
+    } 
+
+    //impresion de resultados
+    if(costo<=0){
+        cout << "no se puede enviar la carta";
+    }else{
+        cout << "el costo de la carta es: "<< costo << "bs";
+    }
+    return 0;
+}
+0 comments on commit 67f95aa
+@Diego181005
+Comment
