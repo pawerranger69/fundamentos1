@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+double r,p,a,pi=3.14;
+    cout<<"Calculadora de área y perimetro de una circunferencia"<<endl;
+    cout<<"Ingresa el valor del radio de tu circunferencia: ";
+    cin>> r;
+    p=pi*2*r;
+    a=pi*(pow(r,2));
+    cout<<"El area de tu coircunferencia es : "<<a<<endl;
+    cout<<"El perimetro de tu circunferencia es: "<<p;
+    return 0;
+}
