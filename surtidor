@@ -1,0 +1,20 @@
+#include <iostream>
+#include<string>
+using namespace std;
+int main(){
+   float g,d,e,s;
+   double gi,di,ei;
+   cout<<"ingrese los litros vendidos de gasolina: "<<endl;
+   cin>>g;
+   cout<<"ingrese los litros vendidos de diesel: "<<endl;
+   cin>>d;
+   cout<<"ingrese los litros vendidos de etanol: "<<endl;
+   cin>>e;
+   gi=g*3.5;
+   di=d*4.0;
+   ei=e*2.5;
+   s=gi+di+ei;
+   cout<< "los ingresos del dia en bs: "<<s<<endl;
+
+    return 0;
+}
