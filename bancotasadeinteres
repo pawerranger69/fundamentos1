@@ -1,0 +1,27 @@
+#include <iostream>
+#include<string>
+using namespace std;
+int main(){
+   float a,s,t;
+    
+    cout<<"ingrese la antiguedad del cliente en años: ";
+    cin>> a;
+    cout<<"ingrese el saldo promedio del cliente: ";
+    cin>> s;
+    if(a > 3){
+        if (s > 5000){
+            if (s < 5000){
+            t=3.0;
+        }else{
+            t=2.0;
+        }
+        }else{
+            t=2.5;
+        }
+    }else{
+        t=1.5;
+    }
+    
+    cout<<"tasa de interes aplicable es: "<<t<<"%"<<endl;
+    return 0;
+}
