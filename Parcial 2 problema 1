@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, sumaPares = 0, sumaImpares = 0, diferencia;
+
+    cout << "Ingrese un número: ";
+    cin >> n;
+
+    while (n > 0) {
+        int digito = n % 10;  
+
+        if (digito % 2 == 0) {
+            sumaPares += digito;
+        } else {
+            sumaImpares += digito;
+        }
+
+        n /= 10;  
+    }
+
+    diferencia = sumaPares - sumaImpares;
+
+    cout << "La diferencia entre la suma de los dígitos pares e impares es: " << diferencia << endl;
+
+    return 0;
+}
