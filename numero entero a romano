@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string enteroARomano(int num) {
+    string miles[] = { "", "M", "MM", "MMM" };
+    string centenas[] = { "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };
+    string decenas[] = { "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
+    string unidades[] = { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
+
+    string romano = "";
+
+    romano += miles[num / 1000];
+    num %= 1000;
+    romano += centenas[num / 100];
+    num %= 100;
+    romano += decenas[num / 10];
+    num %= 10;
+    romano += unidades[num];
+
+    return romano;
+}
+
+int main() {
+    int numero;
+    cout << "Introduce un número (1-3999): ";
+    cin >> numero;
+
+    if (numero < 1 || numero > 3999) {
+        cout << "Por favor, introduce un número entre 1 y 3999." << endl;
+    }
+    else {
+        string numeralRomano = enteroARomano(numero);
+        cout << "El número " << numero << " en romano es: " << numeralRomano << endl;
+    }
+
+    return 0;
+}
