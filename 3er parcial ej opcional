@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+double calcularperimetro(double r,double p);
+double calculararea(double r,double a);
+double calcularvolumen(double r,double v);
+
+int main()
+{
+    double r;
+    cout << "ingrese el radio: ";
+    cin >> r;
+
+    cout << "Perimetro de la circunferencia: " << "p" << endl;
+    cout << "Area de la circunferencia: " << "a" << endl;
+    cout << "Volumen de la circunferencia: " << "v" << endl;
+    return 0;
+}
+double calcularperimetro(double r, double p) {
+    p=2 * 3.1416 * r;
+}
+double calculararea(double r, double a) {
+    a=3.1416 * r *r;
+}
+double calcularvolumen(double r, double v) {
+    v=(4.0 / 3.0) * 3.1416 * r * r * r ;
+}
