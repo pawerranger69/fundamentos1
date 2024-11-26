@@ -1,0 +1,26 @@
+#ifndef USUARIO_H
+#define USUARIO_H
+
+#include <string>
+using namespace std;  // Usar el espacio de nombres std dentro de este archivo
+
+class Usuario {
+private:
+    string nombre;
+    string correo;
+    string contrasena;
+
+public:
+    // Constructor
+    Usuario(const string& nombre, const string& correo, const string& contrasena);
+
+    // Métodos para obtener y modificar atributos
+    string getNombre() const;
+    string getCorreo() const;
+    bool verificarContrasena(const string& contrasena) const;
+
+    // Método para mostrar información del usuario
+    void mostrarInformacion() const;
+};
+
+#endif // USUARIO_H
