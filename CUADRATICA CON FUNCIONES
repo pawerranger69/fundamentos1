@@ -1,0 +1,34 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+void Discriminante(float a, float b, float c, float D);
+
+int main()
+{
+    float a, b, c, x1, x2, D;
+    do {
+        cout << "Ingresa el valor de a: ";
+        cin >> a;
+    } while (a == 0);
+    cout << "Ingresa el valor de b: ";
+    cin >> b;
+    cout << "Ingresa el valor de c: ";
+    cin >> c;
+    Discriminante(a, b, c, D);
+    if (D >= 0) {
+        x1 = (-b + sqrt(D)) / (2 * a);
+        x2 = (-b - sqrt(D)) / (2 * a);
+        cout << "Las soluciones son: " << x1 << " y : " << x2;
+    }
+    else {
+        cout << "No hay soluciones reales";
+    }
+    return 0;
+}
+
+void Discriminante(float a, float b, float c, float D) {
+    D = b * b - 4 * a * c;
+    return D;
+}
