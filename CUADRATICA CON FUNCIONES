@@ -27,6 +27,7 @@ int main()
     }
     return 0;
 }
+//CASTRO
 
 void Discriminante(float a, float b, float c, float D) {
     D = b * b - 4 * a * c;
